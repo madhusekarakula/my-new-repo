@@ -1,0 +1,25 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+  <servlet-name>servletclass</servlet-name>
+  <servlet-class>com.charts.PropServlet</servlet-class>
+  </servlet>
+    <servlet>
+    	<servlet-name>NextProp</servlet-name>
+    	<display-name>NextProp</display-name>
+    	<description></description>
+    	<servlet-class>com.charts.NextProp</servlet-class>
+    </servlet>
+  <servlet-mapping>
+  <servlet-name>servletclass</servlet-name>
+  <url-pattern>/prop</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NextProp</servlet-name>
+  	<url-pattern>/NextProp</url-pattern>
+  </servlet-mapping>
+</web-app>
